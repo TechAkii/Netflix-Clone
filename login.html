@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="title logo.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero {
+            background-image: url(background.jpg);
+            position: relative;
+            height: fit-content;
+            background-size: cover;
+            background-position: center;
+            ;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.519);
+            backdrop-filter: blur(1px);
+            z-index: 1;
+        }
+
+        .hero>* {
+            position: relative;
+            z-index: 2;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+        .logo {
+            
+            padding: 30px 70px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 35px;
+        }
+
+        .form-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            padding: 40px 20px;
+        }
+
+        .sign-in-box {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 60px 68px;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .sign-in-box h2 {
+            color: #fff;
+            font-size: 32px;
+            margin-bottom: 28px;
+            font-weight: 700;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 16px 20px;
+            background: #333;
+            border: 1px solid #555;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-box input:focus {
+            background: #454545;
+            border-color: #888;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            color: #8c8c8c;
+            transform: translateY(-50%);
+            pointer-events: none;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .input-box input:focus+label,
+        .input-box input:valid+label {
+            top: 8px;
+            font-size: 13px;
+            color: #b3b3b3;
+            
+            padding: 0 4px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            background: #e50914;
+            color: #fff;
+            font-size: 18px;
+            padding: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 700;
+            margin-top: 24px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #f6121d;
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        .divider {
+            text-align: center;
+            color: #8c8c8c;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        .btn-secondary {
+            width: 100%;
+            background: transparent;
+            color: #b3b3b3;
+            font-size: 14px;
+            padding: 12px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .sign-up-link {
+            color: #8c8c8c;
+            font-size: 14px;
+            margin-top: 16px;
+            line-height: 1.4;
+        }
+
+        .sign-up-link a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .sign-up-link a:hover {
+            color: #b3b3b3;
+        }
+
+        .recaptcha-notice {
+            color: #8c8c8c;
+            font-size: 12px;
+            margin-top: 16px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                padding: 20px;
+            }
+
+            .sign-in-box {
+                padding: 40px 20px;
+            }
+
+            .sign-in-box h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Netflix logo">
+            </a>
+        </div>
+
+        <div class="form-container">
+            <form class="sign-in-box" onsubmit="handleSignIn(event)">
+                <h2>Sign In</h2>
+
+                <div class="input-box">
+                    <input type="email" id="email" required />
+                    <label for="email">Email or mobile number</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="password" required />
+                    <label for="password">Password</label>
+                </div>
+
+                <button type="submit" class="btn-primary">Sign In</button>
+
+                <div class="divider">OR</div>
+
+                <button type="button" class="btn-secondary">Use a Sign-In Code</button>
+
+                <div class="sign-up-link">
+                    New to Netflix? <a href="index.html">Sign up now.</a>
+                </div>
+
+                <div class="recaptcha-notice">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function handleSignIn(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            console.log('Sign in attempt:', { email, password });
+            // Add your sign-in logic here
+        }
+    </script>
+</body>
+
+</html>

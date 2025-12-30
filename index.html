@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Netflix Sri Lanka - Watch TV Shows Online, Watch Movies Online </title>
+  <link rel="icon" href="Other Main/title_logo.png" type="image/png">
+  <link rel="stylesheet" href="index.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <header class="container">
+    <nav> <a class="logo" href="#"><img src="Other Main/logo.png" alt=""></a> <a class="login_btn" href="login.html">Sign
+        In</a> </nav>
+  </header>
+  <section class="hero">
+    <div class="content2">
+      <p class="p1"> Unlimited movies,<br> TV shows, and <br>more </p>
+      <p class="p2"> <b>Starts at USD 2.99 Cancel anytime.</b> </p>
+      <p class="p3"> Ready to watch? Enter your email to create or restart your membership. </p>
+      <div class="hero-form">
+        <div class="input-box"> <input type="email" required /> <label>Email address</label> </div> <a class="btn"
+          href="#"> Get Started <p class="symbol"> › </p> </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="trending">
+    <h1>
+      Trending Now
+    </h1>
+    <div class="slider">
+      <button class="nav2 left" id="leftBtn">&#10094;</button>
+
+      <div class="gallery" id="gallery">
+
+        <img src="Trnding Images/Stranger Things.png" alt="Stranger Things Season 2" onclick="openModal('overlay1')">
+
+        <img src="Trnding Images/Avengers Doomsday.png" alt="Avengers Doomsday" onclick="openModal('overlay2')">
+
+        <img src="Trnding Images/Man vs Baby.png" alt="Man vs Baby" onclick="openModal('overlay3')">
+
+        <img src="Trnding Images/Wednesday.png" alt="Wednesday Season 2" onclick="openModal('overlay4')">
+
+        <img src="Trnding Images/Dude.png" alt="Dude" onclick="openModal('overlay5')">
+
+        <img src="Trnding Images/The Christmas Chronicles.jpg" alt="The Christmas Chronicles" onclick="openModal('overlay6')">
+
+        <img src="Trnding Images/Emily-in-Paris.jpg" alt="Emily in Paris" onclick="openModal('overlay7')">
+
+        <img src="Trnding Images/The Croods.png" alt="The Croods" onclick="openModal('overlay8')">
+
+
+      </div>
+
+      <button class="nav2 right" id="rightBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Stranger Things Overlay -->
+  <div class="overlay" id="overlay1">
+    <div class="modal">
+
+
+      <div class="overlay_Background">
+
+        <img src="Overlay Images/Stranger Things Season 5 Overlay.png" alt="Stranger Things Season 5">
+        <span class="close" onclick="closeModal('overlay1')">×</span>
+        <div class="blur-bottom"></div>
+      </div>
+
+      <div class="banner">
+        <div class="content">
+          <h1>STRANGER THINGS</h1>
+
+          <div class="tags">
+            <span>2025</span>
+            <span>18+</span>
+            <span>Show</span>
+            <span>Horror</span>
+            <span>Sci-Fi</span>
+            <span>Dramas</span>
+          </div>
+
+          <p>
+            When a young boy vanishes, a small town uncovers a mystery involving
+            secret experiments, terrifying supernatural forces and one strange little girl.
+          </p>
+
+          <button class="cta">Get Started →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Avengers Doctor Doom Overlay -->
+  <div class="overlay" id="overlay2">
+    <div class="modal">
+      <span class="close" onclick="closeModal('overlay2')">×</span>
+
+      <div class="overlay_Background">
+        <img src="Overlay Images/Dooms Day Overlay.png" alt="Avengers:DoomsDay">
+        <div class="blur-bottom"></div>
+      </div>
+
+      <div class="banner">
+        <div class="content">
+          <h1>AVENGERS: DOOMSDAY</h1>
+
+          <div class="tags">
+            <span>2026</span>
+            <span>18+</span>
+            <span>Show</span>
+            <span>Adventure</span>
+            <span>Sci-Fi</span>
+            <span>Dramas</span>
+          </div>
+
+          <p>
+            Earth’s mightiest heroes face their greatest threat yet as Doctor Doom rises.
+          </p>
+
+          <button class="cta">Get Started →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Man VS Baby Overlay -->
+  <div class="overlay" id="overlay3">
+    <div class="modal">
+      <span class="close" onclick="closeModal('overlay3')">×</span>
+
+      <div class="overlay_Background">
+        <img src="Overlay Images/Man vs Baby overlay.png" alt="Man vs Baby overlay">
+        <div class="blur-bottom"></div>
+      </div>
+
+      <div class="banner">
+        <div class="content">
+          <h1>Man VS Baby Overlay</h1>
+
+          <div class="tags">
+            <span>2025</span>
+            <span>7+</span>
+            <span>Show</span>
+            <span>Comedies</span>
+
+          </div>
+
+          <p>
+            As Christmas approaches, a blundering-all-the-way dad juggles housesitting a posh London penthouse with an
+            unexpected pickle: caring for a lost baby.
+          </p>
+
+          <button class="cta">Get Started →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Wednesday Season 2 Overlay -->
+  <div class="overlay" id="overlay4">
+    <div class="modal">
+      <span class="close" onclick="closeModal('overlay4')">×</span>
+
+      <div class="overlay_Background">
+        <img src="Overlay Images/Wednesday Season 2 Overlay.png.png" alt="Wednesday Season 2 Overlay">
+        <div class="blur-bottom"></div>
+      </div>
+
+      <div class="banner">
+        <div class="content">
+          <h1> Wednesday Season 2</h1>
+
+          <div class="tags">
+            <span>2025</span>
+            <span>18+</span>
+            <span>Show</span>
+            <span>Comedies</span>
+            <span>Fantacy</span>
+            <span>Mysteries</span>
+          </div>
+
+          <p>
+            Smart, sarcastic and a little dead inside, Wednesday Addams investigates twisted mysteries while making new
+            friends — and foes — at Nevermore Academy.
+          </p>
+
+          <button class="cta">Get Started →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dude Overlay -->
+  <div class="overlay" id="overlay5">
+    <div class="modal">
+      <span class="close" onclick="closeModal('overlay5')">×</span>
+
+      <div class="overlay_Background">
+        <img src="Overlay Images/Dude Overlay.png" alt="Dude Overlay">
+        <div class="blur-bottom"></div>
+      </div>
+
+      <div class="banner">
+        <div class="content">
+          <h1>Dude</h1>
+
+          <div class="tags">
+            <span>2025</span>
+            <span>13+</span>
+            <span>Movie</span>
+            <span>Comedies</span>
+            <span>Romance</span>
+          </div>
+
+          <p>
+            Childhood friends Agan and Kural reach a crossroads when unexpected feelings and family pressure threaten to
+            upend their relationship.
+          </p>
+
+          <button class="cta">Get Started →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Christmas Chronicles -->
+  <div class="overlay" id="overlay6">
+    <div class="modal">
+      <span class="close" onclick="closeModal('overlay6')">×</span>
+
+      <div class="overlay_Background">
+        <img src="Overlay Images/The-Christmas-Chronicles overlay.png" alt="The-Christmas-Chronicles overlay">
+        <div class="blur-bottom"></div>
+      </div>
+
+      <div class="banner">
+        <div class="content">
+          <h1>The Christmas Chronicles</h1>
+
+          <div class="tags">
+            <span>2026</span>
+            <span>PG</span>
+            <span>Movie</span>
+            <span>Adventure</span>
+            <span>Comedy</span>
+            <span>Family</span>
+          </div>
+
+          <p>
+            Follow the magical adventure of two siblings who team up with Santa Claus to save Christmas, encountering
+            fun, and heartwarming moments along the way.
+          </p>
+
+
+          <button class="cta">Get Started →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Emily in Paris Overlay -->
+  <div class="overlay" id="overlay7">
+    <div class="modal">
+      <span class="close" onclick="closeModal('overlay7')">×</span>
+
+      <div class="overlay_Background">
+        <img src="Overlay Images/Emily in paris Season 4 Overlay.png.png" alt="Emily in paris Season 4 Overlay">
+        <div class="blur-bottom"></div>
+      </div>
+
+      <div class="banner">
+        <div class="content">
+          <h1>Emily in paris Season 4</h1>
+
+          <div class="tags">
+            <span>2026</span>
+            <span>18+</span>
+            <span>Show</span>
+            <span>Comedies</span>
+            <span>Romance</span>
+            <span>Dramas</span>
+          </div>
+
+          <p>
+            New passions. New fashions. New Emily? A plucky American marketing whiz spreads her wings in life and love
+            after landing her dream job in Paris.
+          </p>
+
+          <button class="cta">Get Started →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Croods Overlay -->
+  <div class="overlay" id="overlay8">
+    <div class="modal">
+      <span class="close" onclick="closeModal('overlay8')">×</span>
+
+      <div class="overlay_Background">
+        <img src="Overlay Images/The Croods overlay.png" alt="The Croods overlay">
+        <div class="blur-bottom"></div>
+      </div>
+
+      <div class="banner">
+        <div class="content">
+          <h1>The Croods 2</h1>
+
+          <div class="tags">
+            <span>2026</span>
+            <span>PG</span>
+            <span>Movie</span>
+            <span>Adventure</span>
+            <span>Animation</span>
+            <span>Family</span>
+          </div>
+
+          <p>
+            Join the Croods family on a thrilling journey as they explore new worlds, face hilarious challenges, and
+            discover the true meaning of family and courage.
+          </p>
+
+
+          <button class="cta">Get Started →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section class="reasons">
+    <h1>More Reasons to Join</h1>
+    <div class="cards-container">
+      <div class="card">
+        <h2>Enjoy on your TV</h2>
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        <img src="Icon Images/icon1.png" alt="TV icon" class="mockup">
+      </div>
+
+      <div class="card">
+        <h2>Download your shows to watch offline</h2>
+        <p>Save your favorites easily and always have something to watch.</p>
+        <img src="Icon Images/icon2.png" alt="TV icon" class="mockup">
+      </div>
+
+      <div class="card">
+        <h2>Watch everywhere</h2>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        <img src="Icon Images/icon3.png" alt="TV icon" class="mockup">
+      </div>
+
+      <div class="card">
+        <h2>Create profiles for kids</h2>
+        <p>Send kids on adventures with their favorite characters in a space made just for them — free with your
+          membership.</p>
+        <img src="Icon Images/icon4.png" alt="TV icon" class="mockup">
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--Frequently Asked Questions Hide-->
+  <section class="content3">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="bar">
+        <p>What is Netflix?</p>
+        <span>+</span>
+      </div>
+      <div class="bar_hidden">
+        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+          documentaries, and more.</p>
+        <p>You can watch as much as you want, whenever you want — all for one low monthly price.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="bar">
+        <p>How much does Netflix cost?</p>
+        <span>+</span>
+      </div>
+      <div class="bar_hidden">
+        <p>Plans range from USD 2.99 to USD 9.99 per month.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="bar">
+        <p>Where can I watch?</p>
+        <span>+</span>
+      </div>
+      <div class="bar_hidden">
+        <p>Watch anywhere on phones, tablets, laptops, Smart TVs, and more.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="bar">
+        <p>How do I cancel?</p>
+        <span>+</span>
+      </div>
+      <div class="bar_hidden">
+        <p>You can cancel anytime online with no fees.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="bar">
+        <p>Is Netflix good for kids?</p>
+        <span>+</span>
+      </div>
+      <div class="bar_hidden">
+        <p>Netflix Kids includes parental controls and child-friendly content.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p class="p1">Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="hero-form">
+      <div class="input-box"> <input type="email" required /> <label>Email address</label> </div> <a class="btn"
+        href="#"> Get Started <p class="symbol"> › </p> </a>
+    </div>
+    <a href="#" class="a1">Questions? Contact us.</a>
+    
+    <div class="content4">
+      <div class="block1">
+        <a href="#">FAQ</a><br>
+        <a href="#">Investor Relations</a><br>
+        <a href="#">Speed Test</a><br>
+        <a href="#">Privacy</a><br>
+      </div>
+
+      <div class="block2">
+        <a href="#">Help Center</a><br>
+        <a href="#">Jobs</a><br>
+        <a href="#">Cookie Preference</a><br>
+        <a href="#">Legal Notices</a><br>
+      </div>
+
+      <div class="block3">
+        <a href="#">Account</a><br>
+        <a href="#">Ways to Watch</a><br>
+        <a href="#">Corporate Information</a><br>
+        <a href="#">Only on Netflix</a><br>
+      </div>
+
+      <div class="block4">
+        <a href="#">Media center</a><br>
+        <a href="#">Terms of Use</a><br>
+        <a href="#">Contact Us</a><br>
+      </div>
+    </div>
+
+    <div class="language-selector">
+  <button class="lang-btn">🌐 English</button>
+
+  <ul class="lang-menu">
+    <li data-lang="en">English</li>
+    <li data-lang="si">සිංහල</li>
+    <li data-lang="ta">தமிழ்</li>
+  </ul>
+</div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const gallery = document.getElementById("gallery");
+    const leftBtn = document.getElementById("leftBtn");
+    const rightBtn = document.getElementById("rightBtn");
+
+    function updateButtons() {
+      // show left button only if scrolled
+      leftBtn.style.display = gallery.scrollLeft > 0 ? "block" : "none";
+
+      // hide right button if end reached
+      if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth) {
+        rightBtn.style.display = "none";
+      } else {
+        rightBtn.style.display = "block";
+      }
+    }
+
+    rightBtn.addEventListener("click", () => {
+      gallery.scrollLeft += gallery.offsetWidth / 4;
+      setTimeout(updateButtons, 300);
+    });
+
+    leftBtn.addEventListener("click", () => {
+      gallery.scrollLeft -= gallery.offsetWidth / 4;
+      setTimeout(updateButtons, 300);
+    });
+
+
+    //Overlay 
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+      document.querySelector(".nav2.left").style.display = "none";
+      document.querySelector(".nav2.right").style.display = "none";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+      document.querySelector(".nav2.left").style.display = "block";
+      document.querySelector(".nav2.right").style.display = "block";
+    }
+
+
+    document.querySelectorAll(".bar").forEach(bar => {
+      bar.addEventListener("click", () => {
+        const answer = bar.nextElementSibling;
+        const icon = bar.querySelector("span");
+
+        const isOpen = answer.style.display === "block";
+
+        // Close all
+        document.querySelectorAll(".bar_hidden").forEach(b => b.style.display = "none");
+        document.querySelectorAll(".bar span").forEach(s => s.textContent = "+");
+
+        // Open current
+        if (!isOpen) {
+          answer.style.display = "block";
+          icon.textContent = "×";
+        }
+      });
+    });
+
+    function openModal(id) {
+      document.body.style.overflow = "hidden";
+      document.getElementById(id).style.display = "flex";
+    }
+
+    function closeModal(id) {
+      document.body.style.overflow = "auto";
+      document.getElementById(id).style.display = "none";
+    }
+
+    const selector = document.querySelector(".language-selector");
+const button = document.querySelector(".lang-btn");
+const items = document.querySelectorAll(".lang-menu li");
+
+button.addEventListener("click", () => {
+  selector.classList.toggle("active");
+});
+
+items.forEach(item => {
+  item.addEventListener("click", () => {
+    const lang = item.dataset.lang;
+    button.textContent = "🌐 " + item.textContent;
+    selector.classList.remove("active");
+
+    // Example action
+    console.log("Language selected:", lang);
+  });
+});
+
+// Close when clicking outside
+document.addEventListener("click", (e) => {
+  if (!selector.contains(e.target)) {
+    selector.classList.remove("active");
+  }
+}); 
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
