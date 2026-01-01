@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
-body{
-    background: linear-gradient(180deg, 
-    #000000 30%, 
-    #0a1026 60%, 
-    #000000 100%);
+
+body {
+    background: linear-gradient(180deg,
+            #000000 30%,
+            #0a1026 60%,
+            #000000 100%);
 }
+
 header {
     height: 100px;
     position: absolute;
@@ -162,8 +164,6 @@ header nav .login_btn:hover {
     font-weight: lighter;
 }
 
-
-
 .trending h1 {
     padding: 0px 150px 0 137px;
     color: #fff;
@@ -228,11 +228,11 @@ header nav .login_btn:hover {
 }
 
 .left {
-    left: 150px;
+    left: 110px;
 }
 
 .right {
-    right: 150px;
+    right: 110px;
 }
 
 
@@ -250,12 +250,13 @@ header nav .login_btn:hover {
 
 .modal {
     width: 501.75px;
-    height: 480px;
+    height: 510px;
     border-radius: 14px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     position: relative;
+    color: #fff;
 }
 
 .overlay_Background {
@@ -267,16 +268,74 @@ header nav .login_btn:hover {
 
 .overlay_Background img {
     width: 100%;
-    height: 60%;
+    height: 100%;
     object-fit: contain;
     /* FULL IMAGE */
     object-position: center;
 }
 
 .banner1 {
-    height: 45%;
-    background: #111;
-    color: white;
+    height: 70%;
+    background: linear-gradient(135deg,
+            rgb(64, 33, 25) 0%,
+            rgb(106, 31, 31) 50%,
+            rgb(14, 10, 18) 100%);
+    padding: 50px;
+}
+.banner2 {
+    height: 70%;
+    background: linear-gradient(135deg,
+            rgb(47, 104, 42) 0%,
+            rgb(21, 60, 21) 30%,
+            rgb(14, 10, 18) 100%);
+    padding: 50px;
+}
+.banner3 {
+    height: 70%;
+    background: linear-gradient(135deg,
+            rgb(45, 105, 124) 0%,
+            rgb(31, 30, 85) 50%,
+            rgb(14, 10, 18) 100%);
+    padding: 50px;
+}
+.banner4 {
+    height: 70%;
+    background: linear-gradient(135deg,
+            rgb(25, 29, 64) 0%,
+            rgb(42, 22, 63) 50%,
+            rgb(14, 10, 18) 100%);
+    padding: 50px;
+}
+.banner5 {
+    height: 70%;
+    background: linear-gradient(135deg,
+            rgb(82, 82, 37) 0%,
+            rgb(74, 75, 21) 50%,
+            rgb(14, 10, 18) 100%);
+    padding: 50px;
+}
+.banner6 {
+    height: 77%;
+    background: linear-gradient(135deg,
+            rgb(98, 16, 30) 0%,
+            rgb(123, 14, 14) 50%,
+            rgb(14, 10, 18) 100%);
+    padding: 50px;
+}
+.banner7 {
+    height: 70%;
+    background: linear-gradient(135deg,
+            rgb(101, 103, 102) 0%,
+            rgb(88, 88, 88) 50%,
+            rgb(14, 10, 18) 100%);
+    padding: 50px;
+}
+.banner8 {
+    height: 109%;
+    background: linear-gradient(135deg,
+            rgb(97, 102, 149) 0%,
+            rgb(27, 63, 126) 50%,
+            rgb(14, 10, 18) 100%);
     padding: 50px;
 }
 
@@ -287,17 +346,18 @@ header nav .login_btn:hover {
     max-width: 450px;
     color: #fff;
     top: 280px;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .content h1 {
-    font-size: 35px;
+    font-size: 33px;
     margin-bottom: 12px;
     letter-spacing: 1px;
 }
 
 .tags span {
-    background: #2a2a2a;
+    background: #171717;
     padding: 5px 10px;
     margin-right: 6px;
     border-radius: 6px;
@@ -305,8 +365,9 @@ header nav .login_btn:hover {
 }
 
 .content p {
-    margin: 18px 0;
-    font-size: 14px;
+    margin: 18px ;
+    margin-left: 0;
+    font-size: 13px;
     line-height: 1.6;
 }
 
@@ -346,24 +407,8 @@ header nav .login_btn:hover {
     transform: scale(1.05);
 }
 
-/* BLUR BOTTOM */
-.blur-bottom {
-    position: absolute;
-    bottom: -2px;
-    /* ⬅ overlap */
-    left: 0;
-    width: 100%;
-    height: 35%;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    background: linear-gradient(to bottom,
-            rgba(16, 38, 4, 0) 0%,
-            rgba(16, 38, 4, 0.4) 60%,
-            rgba(16, 38, 4, 0.85) 100%);
-    pointer-events: none;
-}
 .reasons {
-    
+
     padding: 50px 20px;
     color: #fff;
 }
@@ -377,7 +422,8 @@ header nav .login_btn:hover {
 .cards-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;   /* allows wrapping on smaller screens */
+    flex-wrap: wrap;
+    /* allows wrapping on smaller screens */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -385,9 +431,9 @@ header nav .login_btn:hover {
 
 .card {
     background: linear-gradient(135deg,
-     rgb(25, 29, 64) 0%, 
-     rgb(42, 22, 63) 50%, 
-     rgb(14, 10, 18) 100%);
+            rgb(25, 29, 64) 0%,
+            rgb(42, 22, 63) 50%,
+            rgb(14, 10, 18) 100%);
     min-height: 220px;
     width: 260px;
     border-radius: 15px;
@@ -399,7 +445,7 @@ header nav .login_btn:hover {
 .card h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    padding: 5px 5px 0 ;
+    padding: 5px 5px 0;
     font-size: 1.4rem;
 }
 
@@ -420,65 +466,65 @@ header nav .login_btn:hover {
 }
 
 .plus-btn {
-  font-size: 22px;
-  padding: 10px 16px;
-  cursor: pointer;
+    font-size: 22px;
+    padding: 10px 16px;
+    cursor: pointer;
 }
 
 /* PANEL */
 .info-panel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #2f2f2f;
-  color: white;
-  transform: translateY(-100%);
-  transition: transform 0.4s ease;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2f2f2f;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
 }
 
 /* SHOW PANEL */
 .info-panel.active {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 /* HEADER */
 .info-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #444;
 }
 
 .close-btn {
-  font-size: 26px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 /* CONTENT */
 .info-content {
-  padding: 20px;
-  line-height: 1.6;
+    padding: 20px;
+    line-height: 1.6;
 }
 
-.content3{
-    
+.content3 {
+
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
-.content3 h1{
+.content3 h1 {
     padding: 10px 139px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .faq-item {
-    padding:10px 140px ;
+    padding: 10px 140px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -505,7 +551,8 @@ header nav .login_btn:hover {
     border-radius: 20px;
     transition: all 0.2s ease;
 }
-.bar span:hover{
+
+.bar span:hover {
     background-color: rgba(255, 255, 255, 0.414);
     color: rgb(255, 255, 255);
     /* optional */
@@ -524,76 +571,156 @@ header nav .login_btn:hover {
     margin-bottom: 10px;
 }
 
-footer{
+footer {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
-.content4{
+.content4 {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     line-height: 1.8;
 }
 
-footer a{
+footer a {
     color: #928f8f;
 }
 
-footer .p1{
+footer .p1 {
     text-align: center;
-    padding: 50px 0 10px ;
+    padding: 50px 0 10px;
 }
 
-footer .a1{
+footer .a1 {
     padding: 200px;
     line-height: 10;
 }
 
 
 .language-selector {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .lang-btn {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 4px 5px;
-  cursor: pointer;
-  font-size: 9px;
-  border-radius: 4px;
-  margin: 25px 200px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 9px 14px;
+    cursor: pointer;
+    font-size: 11px;
+    border-radius: 4px;
+    margin: 25px 200px;
 }
 
 .lang-menu {
-  list-style: none;
-  position: absolute;
-  right: 0;
-  top: 110%;
-  background: #000;
-  border: 1px solid #333;
-  display: none;
-  min-width: 120px;
-  z-index: 1000;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background: #000;
+    border: 1px solid #333;
+    display: none;
+    min-width: 120px;
+    z-index: 1000;
 }
 
 .lang-menu li {
-  padding: 0px;
-  color: #fff;
-  cursor: pointer;
+    padding: 0px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .lang-menu li:hover {
-  background: #222;
+    background: #222;
 }
 
 /* Show menu */
 .language-selector.active .lang-menu {
-  display: block;
+    display: block;
 }
 
+.footer-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 80px auto;
+    margin-top: 15px;
+}
 
+/* input box */
+.input-box2 {
+    position: relative;
+    width: 400px;
+}
 
+.input-box2 input {
+    width: 100%;
+    padding: 30px 15px 15px;
+    background: #07070784;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 500;
+}
 
+.input-box2 label {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    color: #8c8c8c;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.2s ease;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/* floating effect */
+.input-box2 input:focus+label,
+.input-box2 input:valid+label {
+    top: 8px;
+    font-size: 15px;
+}
+.btn2 {
+    background: #e50914;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn2:hover {
+    background: #f6121d;
+}
+
+.symbol2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    font-weight: lighter;
+    padding-left:  10px;
+}
+
+.last{
+    padding-left: 200px;
+    font-size: 10px;
+    color: #8c8c8c;
+}
+.last p{
+    line-height: 5;
+    font-size: 13px;
+}
+.last a {
+    color: lightskyblue;
+}
