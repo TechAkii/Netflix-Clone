@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="icon" href="title logo.png" type="image/png">
+    <link rel="icon" href="Other Main/title_logo.png" type="image/png">
     <style>
         * {
             margin: 0;
@@ -18,7 +19,7 @@
         }
 
         .hero {
-            background-image: url(background.jpg);
+            background-image: url(Other\ Main/Login-Background.png);
             position: relative;
             height: fit-content;
             background-size: cover;
@@ -30,7 +31,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(0, 0, 0, 0.519);
+            background: rgba(0, 0, 0, 0.137);
             backdrop-filter: blur(1px);
             z-index: 1;
         }
@@ -43,8 +44,8 @@
         }
 
         .logo {
-            
-            padding: 30px 70px;
+
+            padding: 25px 40px;
         }
 
         .logo img {
@@ -63,7 +64,7 @@
         }
 
         .sign-in-box {
-            background: rgba(0, 0, 0, 0.75);
+            background: rgba(0, 0, 0, 0.541);
             padding: 60px 68px;
             border-radius: 4px;
             width: 100%;
@@ -116,7 +117,7 @@
             top: 8px;
             font-size: 13px;
             color: #b3b3b3;
-            
+
             padding: 0 4px;
         }
 
@@ -205,6 +206,46 @@
                 font-size: 24px;
             }
         }
+
+        .a-notice {
+            color: rgba(60, 108, 220, 0.963);
+            text-decoration: underline;
+            padding-top: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .hidden_msg {
+            display: none;
+            padding-top: 10px;
+            color: #b3b3b3;
+            font-size: 12px;
+        }
+
+        .hidden_msg a {
+            color: rgba(60, 108, 220, 0.963);
+        }
+
+        footer{
+            background-color: #626161;
+            
+        }
+
+        .content4{
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 25px 175px;
+            
+        }
+
+        .block1 a,
+        .block2 a,
+        .block3 a,
+        .block4 a{
+            color: #b3b3b3;
+        }
+
     </style>
 </head>
 
@@ -212,7 +253,7 @@
     <section class="hero">
         <div class="logo">
             <a href="index.html">
-                <img src="logo.png" alt="Netflix logo">
+                <img src="Other Main/logo.png" alt="Netflix logo">
             </a>
         </div>
 
@@ -243,9 +284,52 @@
                 <div class="recaptcha-notice">
                     This page is protected by Google reCAPTCHA to ensure you're not a bot.
                 </div>
+
+                <div class="a-notice" id="a-notice">
+                    <p>Learn more.</p>
+                </div>
+                <div class="hidden_msg" id="hidden_msg">
+                    The information collected by Google reCAPTCHA is subject to the Google <a
+                        href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+                        href="https://policies.google.com/terms">Terms of Service</a>, and is used for providing,
+                    maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used
+                    for personalized advertising by Google).
+                </div>
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="content4">
+            <div class="block1">
+                <a href="#">FAQ</a><br>
+                <a href="#">Investor Relations</a><br>
+                <a href="#">Speed Test</a><br>
+                <a href="#">Privacy</a><br>
+            </div>
+
+            <div class="block2">
+                <a href="#">Help Center</a><br>
+                <a href="#">Jobs</a><br>
+                <a href="#">Cookie Preference</a><br>
+                <a href="#">Legal Notices</a><br>
+            </div>
+
+            <div class="block3">
+                <a href="#">Account</a><br>
+                <a href="#">Ways to Watch</a><br>
+                <a href="#">Corporate Information</a><br>
+                <a href="#">Only on Netflix</a><br>
+            </div>
+
+            <div class="block4">
+                <a href="#">Media center</a><br>
+                <a href="#">Terms of Use</a><br>
+                <a href="#">Contact Us</a><br>
+            </div>
+        </div>
+
+    </footer>
 
     <script>
         function handleSignIn(event) {
@@ -254,7 +338,22 @@
             const password = document.getElementById('password').value;
             console.log('Sign in attempt:', { email, password });
             // Add your sign-in logic here
+            function hidden_msg() {
+
+            }
         }
+
+        const a_notice = document.getElementById("a-notice");
+        const hiddenContent = document.getElementById("hidden_msg");
+
+        a_notice.addEventListener("click", function () {
+            if (hiddenContent.style.display === "none") {
+                hiddenContent.style.display = "block";
+                a_notice.textContent = "";
+            } else {
+                hiddenContent.style.display = "none";
+            }
+        });
     </script>
 </body>
 
