@@ -282,6 +282,7 @@ header nav .login_btn:hover {
             rgb(14, 10, 18) 100%);
     padding: 50px;
 }
+
 .banner2 {
     height: 70%;
     background: linear-gradient(135deg,
@@ -290,6 +291,7 @@ header nav .login_btn:hover {
             rgb(14, 10, 18) 100%);
     padding: 50px;
 }
+
 .banner3 {
     height: 70%;
     background: linear-gradient(135deg,
@@ -298,6 +300,7 @@ header nav .login_btn:hover {
             rgb(14, 10, 18) 100%);
     padding: 50px;
 }
+
 .banner4 {
     height: 70%;
     background: linear-gradient(135deg,
@@ -306,6 +309,7 @@ header nav .login_btn:hover {
             rgb(14, 10, 18) 100%);
     padding: 50px;
 }
+
 .banner5 {
     height: 70%;
     background: linear-gradient(135deg,
@@ -314,6 +318,7 @@ header nav .login_btn:hover {
             rgb(14, 10, 18) 100%);
     padding: 50px;
 }
+
 .banner6 {
     height: 77%;
     background: linear-gradient(135deg,
@@ -322,6 +327,7 @@ header nav .login_btn:hover {
             rgb(14, 10, 18) 100%);
     padding: 50px;
 }
+
 .banner7 {
     height: 70%;
     background: linear-gradient(135deg,
@@ -330,6 +336,7 @@ header nav .login_btn:hover {
             rgb(14, 10, 18) 100%);
     padding: 50px;
 }
+
 .banner8 {
     height: 109%;
     background: linear-gradient(135deg,
@@ -365,7 +372,7 @@ header nav .login_btn:hover {
 }
 
 .content p {
-    margin: 18px ;
+    margin: 18px;
     margin-left: 0;
     font-size: 13px;
     line-height: 1.6;
@@ -685,6 +692,7 @@ footer .a1 {
     top: 8px;
     font-size: 15px;
 }
+
 .btn2 {
     background: #e50914;
     color: #fff;
@@ -709,18 +717,31 @@ footer .a1 {
     text-align: center;
     justify-content: center;
     font-weight: lighter;
-    padding-left:  10px;
+    padding-left: 10px;
 }
 
-.last{
+.last {
     padding-left: 200px;
     font-size: 10px;
     color: #8c8c8c;
 }
-.last p{
+
+.last p {
     line-height: 5;
     font-size: 13px;
 }
+
 .last a {
     color: lightskyblue;
+}
+
+.hidden_msg {
+    display: none;
+    padding: 60px;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.last a{
+    cursor: pointer;
 }
