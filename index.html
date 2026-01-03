@@ -7,7 +7,6 @@
   <title> Netflix Sri Lanka - Watch TV Shows Online, Watch Movies Online </title>
   <link rel="icon" href="Other Main/title_logo.png" type="image/png">
   <link rel="stylesheet" href="index.css">
-  <script src="main.js"></script>
 </head>
 
 <body>
@@ -22,8 +21,10 @@
       <p class="p2"> <b>Starts at USD 2.99 Cancel anytime.</b> </p>
       <p class="p3"> Ready to watch? Enter your email to create or restart your membership. </p>
       <div class="hero-form">
-        <div class="input-box"> <input type="email" required /> <label>Email address</label> </div> <a class="btn"
-          href="#"> Get Started <p class="symbol"> › </p> </a>
+        <div class="input-box">
+          <input type="email" required /> <label>Email address</label>
+        </div>
+        <a class="btn" href="#"> Get Started <p class="symbol"> › </p> </a>
       </div>
     </div>
   </section>
@@ -486,10 +487,20 @@
       <p>
         Netflix Sri Lanka
       </p>
-      <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+      <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a class="a-notice" id="a-notice">Learn more.</a></p>
     </div>
+    
+  <div class="hidden_msg" id="hidden_msg">
+    The information collected by Google reCAPTCHA is subject to the Google <a
+      href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+      href="https://policies.google.com/terms">Terms of Service</a>, and is used for providing,
+    maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used
+    for personalized advertising by Google).
+  </div>
 
   </footer>
+
+
 
 
 
@@ -588,6 +599,18 @@
     document.addEventListener("click", (e) => {
       if (!selector.contains(e.target)) {
         selector.classList.remove("active");
+      }
+    });
+
+    const a_notice = document.getElementById("a-notice");
+    const hiddenContent = document.getElementById("hidden_msg");
+
+    a_notice.addEventListener("click", function () {
+      if (hiddenContent.style.display === "none") {
+        hiddenContent.style.display = "block";
+        a_notice.textContent = "";
+      } else {
+        hiddenContent.style.display = "none";
       }
     });
 
